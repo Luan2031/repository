@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0D0F14;
+}
+
+header {
+    display: flex;
+    margin-bottom: 70px;
+    background-color: #171A23;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.catalogo {
+    font-size: 20px;
+    color: #E5E7EB;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.catalogo:hover {
+    color: #3B82F6;
+    transform: scale(1.03);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#lista {
+    display: flex;
+    gap: 100px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Organização dos cards */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px;
+}
+
+/* Card individual */
+
+.card {
+    background-color: #171A23;
+    border: 1px solid #334B75;
+    border-radius: 12px;
+    width: 300px;
+    height: 620px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    transition: 400ms;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #3B82F6;
+}
+
+/* Imagens */
+
+.img {
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    margin: 5px auto 15px;
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+}
+
+/* Títulos */
+
+.card h2 {
+    color: #FFFFFF;
+    margin: 10px 5px;
+}
+
+/* Descrições */
+
+.card p {
+    color: #B8BCC8;
+    margin: 5px;
+    line-height: 1.4;
+}
+
+/* Preços */
+
+.preco {
+    color: #22C55E;
+    margin: 15px 5px;
+    font-size: 25px;
+}
+
+/* Botões */
+
+.card button {
+    background-color: #2563EB;
+    border: 1px solid #2563EB;
+    border-radius: 8px;
+    color: #FFFFFF;
+    padding: 15px 0;
+    margin-top: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.card button:hover {
+    background-color: #3B82F6;
+    border-color: #3B82F6;
+}
+
+/* Página inicial */
+
+.inicio {
+    background-color: #171A23;
+    color: #FFFFFF;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.inicio h1,
+.inicio h2 {
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #B8BCC8;
+}
+
+/* Página sobre */
+
+.sobre {
+    background-color: #171A23;
+    color: #FFFFFF;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.sobre h1,
+.sobre h2 {
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    margin-bottom: 20px;
+    color: #B8BCC8;
+}
+
+.sobre a {
+    color: #3B82F6;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #171A23;
+    color: #9CA3AF;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+}
